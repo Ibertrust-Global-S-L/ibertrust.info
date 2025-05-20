@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IberTrust Global S.L.</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f3f2ee;
+            margin: 0;
+            padding: 0;
+            color: #1b1b1b;
+        }
+        header {
+            background: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            height: 80px;
+        }
+        section {
+            padding: 40px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
+        .service {
+            width: 250px;
+        }
+        .service img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .service p {
+            color: #157347;
+            font-weight: 500;
+            text-decoration: underline;
+        }
+        .about {
+            display: flex;
+            padding: 40px;
+            align-items: center;
+            background: #e5e5e0;
+        }
+        .about img {
+            width: 300px;
+            margin-right: 40px;
+        }
+        .about div {
+            text-align: left;
+        }
+        form {
+            margin-top: 30px;
+        }
+        input, textarea {
+            padding: 10px;
+            width: 45%;
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        button {
+            background: #157347;
+            color: white;
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="IberTrust Logo">
+    </header>
+
+    <section>
+        <h2>Featured Products</h2>
+        <div class="services">
+            <div class="service">
+                <img src="images/Logo 2.png" alt="">
+                <p>Company Registration Solutions</p>
+            </div>
+            <div class="service">
+                <img src="images/Logo 2.png" alt="">
+                <p>Local Representatives in the EU, UK, and Turkey</p>
+            </div>
+            <div class="service">
+                <img src="images/Logo 2.png" alt="">
+                <p>Other EPR, TAX and Trade Consulting</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <img src="images/Logo 2.png" alt="">
+        <div>
+            <h2>About Our Company</h2>
+            <p>Our team brings together experts in product compliance for major e-commerce platforms like Amazon and Temu, along with seasoned professionals with over 20 years of experience in traditional international trade.</p>
+            <p>We operate with strong networks across Spain, Portugal, Ireland, the UK, Turkey, Malta, and China, providing tailored support for both cross-border e-commerce and B2B trade.</p>
+            <p>We welcome Chinese exporters and digital sellers seeking reliable, localized, and future-ready business solutions in the EU and beyond.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Interested in working together? Fill out some info and we will be in touch shortly.</p>
+        <form>
+            <input type="text" placeholder="First Name (required)" required>
+            <input type="text" placeholder="Last Name (required)" required><br>
+            <input type="email" placeholder="Email (required)" required><br>
+            <textarea placeholder="Message (required)" rows="5" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+</body>
+</html>
