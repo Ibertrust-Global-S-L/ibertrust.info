@@ -124,3 +124,1089 @@
     </section>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibertrust Global - EU Authorised Representative Services</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #0052CC;
+            --light-blue: #F0F6FF;
+            --dark-blue: #003A99;
+            --white: #FFFFFF;
+            --text-dark: #1a1a1a;
+            --text-light: #666666;
+            --border-light: #E8EEFF;
+            --accent-blue: #0066FF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0, 82, 204, 0.08);
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-dark);
+            text-decoration: none;
+            transition: color 0.3s ease;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .cta-button-header {
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 0.6rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .cta-button-header:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 82, 204, 0.25);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--white) 100%);
+            padding: 5rem 5% 4rem;
+            text-align: center;
+            min-height: calc(100vh - 70px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero-content {
+            max-width: 700px;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            font-weight: 800;
+        }
+
+        .hero .highlight {
+            color: var(--primary-blue);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 1rem 2.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-blue);
+            cursor: pointer;
+            margin: 0.5rem;
+        }
+
+        .cta-button:hover {
+            background: var(--dark-blue);
+            border-color: var(--dark-blue);
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(0, 82, 204, 0.35);
+        }
+
+        .cta-button-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .cta-button-secondary:hover {
+            background: var(--light-blue);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        /* Section Styling */
+        section {
+            padding: 5rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 3rem;
+            text-align: center;
+            font-weight: 800;
+        }
+
+        section h2 .highlight {
+            color: var(--primary-blue);
+        }
+
+        /* About Section */
+        .about {
+            background: var(--white);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+        }
+
+        .about-text p {
+            color: var(--text-light);
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-stats {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-box {
+            flex: 1;
+            padding: 1.5rem;
+            background: var(--light-blue);
+            border-radius: 8px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stat-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 82, 204, 0.15);
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+        }
+
+        .stat-label {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        .about-image {
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-blue));
+            border-radius: 12px;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 3rem;
+            animation: slideInRight 0.8s ease;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .about-image {
+                height: 250px;
+            }
+        }
+
+        /* Services Section */
+        .services {
+            background: var(--light-blue);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border-top: 4px solid var(--primary-blue);
+            animation: scaleIn 0.6s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 82, 204, 0.15);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .service-card p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* How It Works */
+        .how-it-works {
+            background: var(--white);
+        }
+
+        .steps-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .step {
+            text-align: center;
+            animation: fadeInUp 0.8s ease;
+        }
+
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-blue);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin: 0 auto 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .step:hover .step-number {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 82, 204, 0.3);
+        }
+
+        .step h3 {
+            font-size: 1.2rem;
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .step p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Trust Section */
+        .trust {
+            background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+            color: var(--white);
+            text-align: center;
+        }
+
+        .trust h2,
+        .trust h3 {
+            color: var(--white);
+        }
+
+        .trust-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .trust-stat {
+            padding: 2rem;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .trust-stat:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        .trust-stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .trust-stat-label {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .testimonial {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 12px;
+            border-left: 4px solid var(--accent-blue);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .testimonial:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateX(5px);
+        }
+
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background: var(--white);
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .benefit {
+            padding: 2rem;
+            background: var(--light-blue);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            border-left: 4px solid var(--primary-blue);
+        }
+
+        .benefit:hover {
+            transform: translateX(8px);
+            box-shadow: 0 10px 25px rgba(0, 82, 204, 0.1);
+        }
+
+        .benefit-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit h3 {
+            font-size: 1.1rem;
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+            font-weight: 700;
+        }
+
+        .benefit p {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        /* Contact Section */
+        .contact {
+            background: var(--light-blue);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            animation: slideInLeft 0.8s ease;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 2rem;
+            font-weight: 700;
+        }
+
+        .contact-item {
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-blue);
+            min-width: 30px;
+        }
+
+        .contact-text {
+            flex: 1;
+        }
+
+        .contact-text strong {
+            color: var(--text-dark);
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 600;
+        }
+
+        .contact-text p,
+        .contact-text a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-text a:hover {
+            color: var(--primary-blue);
+        }
+
+        .contact-form {
+            animation: slideInRight 0.8s ease;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--border-light);
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            resize: none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-blue);
+            box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.1);
+        }
+
+        .form-group textarea {
+            height: 120px;
+        }
+
+        .form-submit {
+            width: 100%;
+            background: var(--primary-blue);
+            color: var(--white);
+            padding: 0.8rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: var(--dark-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 82, 204, 0.25);
+        }
+
+        @media (max-width: 768px) {
+            .contact-wrapper {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 3rem 5%;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-company {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-company-name {
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-details {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .footer-detail {
+            line-height: 1.8;
+        }
+
+        .footer-detail strong {
+            color: var(--accent-blue);
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .footer-bottom {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive Typography */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            section h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .about-stats {
+                flex-direction: column;
+            }
+
+            .services-grid,
+            .steps-container,
+            .trust-stats,
+            .testimonials,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Utility Classes */
+        .opacity-75 {
+            opacity: 0.75;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="#" class="logo">Ibertrust Global</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#how">How It Works</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="cta-button-header">Get Started</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Your Trusted <span class="highlight">EU Representative</span></h1>
+            <p>Simplify your European compliance. We handle the regulations, you focus on growing your business across the EU.</p>
+            <div>
+                <a href="#contact" class="cta-button">Get Started</a>
+                <a href="#how" class="cta-button cta-button-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h2>About <span class="highlight">Ibertrust Global</span></h2>
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Established in 2024, serving the world.</h3>
+                <p>Ibertrust Global is your dedicated EU Authorised Representative. We bridge the gap between non-EU companies and European regulations, making market entry smooth and compliant.</p>
+                <p>With a presence across 15 partner countries and serving over 5,000 members, we've built a reputation for reliability, expertise, and genuine partnerships.</p>
+                <p>Our mission is simple: remove barriers to European growth and help international businesses thrive in the EU market.</p>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <div class="stat-number">5000+</div>
+                        <div class="stat-label">Active Members</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">15</div>
+                        <div class="stat-label">Partner Countries</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">🌍</div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h2>Our <span class="highlight">Services</span></h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">📋</div>
+                <h3>EU Authorised Representative</h3>
+                <p>Official representation in the EU with full compliance and regulatory support. We're your legal presence in Europe.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✅</div>
+                <h3>Compliance Support</h3>
+                <p>Navigate complex EU regulations with confidence. We ensure your business meets all legal requirements.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3>EU Market Representation</h3>
+                <p>Expand into European markets smoothly. We handle the administrative burden so you can focus on sales and growth.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how">
+        <h2>How It <span class="highlight">Works</span></h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Connect</h3>
+                <p>Tell us about your business and your EU expansion goals. We'll understand your needs and create a tailored plan.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Establish</h3>
+                <p>We set up your official EU Authorised Representative status. All documentation is handled by our expert team.</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Grow</h3>
+                <p>With compliance secured, scale your business across Europe. We provide ongoing support every step of the way.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust & Credibility Section -->
+    <section class="trust">
+        <h2>Why Trust <span class="highlight">Ibertrust Global</span></h2>
+        <div class="trust-stats">
+            <div class="trust-stat">
+                <div class="trust-stat-number">5000+</div>
+                <div class="trust-stat-label">Trusted Members</div>
+            </div>
+            <div class="trust-stat">
+                <div class="trust-stat-number">15</div>
+                <div class="trust-stat-label">Partner Countries</div>
+            </div>
+            <div class="trust-stat">
+                <div class="trust-stat-number">100%</div>
+                <div class="trust-stat-label">Compliance Focused</div>
+            </div>
+            <div class="trust-stat">
+                <div class="trust-stat-number">24/7</div>
+                <div class="trust-stat-label">Support Available</div>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"Ibertrust made our EU expansion effortless. Their team handled everything we needed to operate legally and confidently."</p>
+                <div class="testimonial-author">- Sarah M., Tech Startup</div>
+            </div>
+            <div class="testimonial">
+                <p>"Professional, reliable, and truly understand what non-EU companies need. Highly recommended for anyone entering the European market."</p>
+                <div class="testimonial-author">- John K., E-Commerce Founder</div>
+            </div>
+            <div class="testimonial">
+                <p>"The compliance support alone is worth it. No more guessing about regulations—we have experts handling everything."</p>
+                <div class="testimonial-author">- Maria L., Manufacturing</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <h2>Why Choose <span class="highlight">Us</span></h2>
+        <div class="benefits-grid">
+            <div class="benefit">
+                <div class="benefit-icon">⚡</div>
+                <h3>Fast Setup</h3>
+                <p>Get your EU representation established quickly. No lengthy delays—we prioritize speed without sacrificing quality.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🛡️</div>
+                <h3>Full Compliance</h3>
+                <p>Stay on top of every regulation. Our experts ensure you're always compliant with EU requirements and standards.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">💼</div>
+                <h3>Expert Team</h3>
+                <p>Our specialists bring years of EU experience. You get guidance from people who truly understand European business.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">💰</div>
+                <h3>Clear Pricing</h3>
+                <p>Transparent costs with no hidden fees. You know exactly what you're paying for and what you're getting.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🤝</div>
+                <h3>Real Partnership</h3>
+                <p>We're not just a service provider—we're your partner in European growth. Your success is our success.</p>
+            </div>
+            <div class="benefit">
+                <div class="benefit-icon">🌐</div>
+                <h3>Multi-Country Coverage</h3>
+                <p>Representation across 15 countries. Whether you're targeting one market or the whole EU, we've got you covered.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2>Get in <span class="highlight">Touch</span></h2>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-text">
+                        <strong>Address</strong>
+                        <p>C/ Pablo Iglesias, 1, Entresuelo A<br>12003 Castelló de la Plana<br>Spain</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-text">
+                        <strong>Email</strong>
+                        <a href="mailto:contact@ibertrust.info">contact@ibertrust.info</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-text">
+                        <strong>Phone</strong>
+                        <a href="tel:+34600256836">+34 600 256 836</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">🏢</div>
+                    <div class="contact-text">
+                        <strong>Company Info</strong>
+                        <p><strong>Legal Name:</strong> Ibertrust Global, Sociedad Limitada<br>
+                        <strong>NIF:</strong> B21813506<br>
+                        <strong>Established:</strong> 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company Name</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="form-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-company">
+                <div class="footer-company-name">Ibertrust Global, Sociedad Limitada</div>
+                <p>Your trusted EU Authorised Representative since 2024</p>
+            </div>
+            <div class="footer-details">
+                <div class="footer-detail">
+                    <strong>Company</strong>
+                    NIF: B21813506<br>
+                    Established: 2024
+                </div>
+                <div class="footer-detail">
+                    <strong>Location</strong>
+                    C/ Pablo Iglesias, 1<br>
+                    Entresuelo A, 12003<br>
+                    Castelló de la Plana, Spain
+                </div>
+                <div class="footer-detail">
+                    <strong>Contact</strong>
+                    Email: contact@ibertrust.info<br>
+                    Phone: +34 600 256 836
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ibertrust Global. All rights reserved.</p>
+                <p>EU Authorised Representative Services | Compliance Support | Market Representation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .step, .benefit, .stat-box').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const company = document.getElementById('company').value;
+                const message = document.getElementById('message').value;
+
+                // Simple validation
+                if (name && email && message) {
+                    // Create mailto link with form data
+                    const mailtoLink = `mailto:contact@ibertrust.info?subject=New Inquiry from ${encodeURIComponent(name)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0ACompany: ${encodeURIComponent(company)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
+                    
+                    // Show success message
+                    const originalText = this.querySelector('.form-submit').textContent;
+                    this.querySelector('.form-submit').textContent = 'Message sent! ✓';
+                    
+                    // Reset form
+                    setTimeout(() => {
+                        this.reset();
+                        this.querySelector('.form-submit').textContent = originalText;
+                    }, 2000);
+
+                    // Optionally open email client
+                    window.location.href = mailtoLink;
+                }
+            });
+        }
+
+        // Header scroll effect
+        let lastScrollTop = 0;
+        const header = document.querySelector('header');
+
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (scrollTop > 50) {
+                header.style.boxShadow = '0 4px 15px rgba(0, 82, 204, 0.12)';
+            } else {
+                header.style.boxShadow = '0 2px 10px rgba(0, 82, 204, 0.08)';
+            }
+            
+            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        });
+    </script>
+</body>
+</html>
