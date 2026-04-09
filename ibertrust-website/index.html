@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,39 +26,42 @@
         .services {
             display: flex;
             justify-content: center;
-            gap: 40px;
-            margin-bottom: 50px;
+            gap: 30px;
             flex-wrap: wrap;
         }
         .service {
-            width: 250px;
-        }
-        .service img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .service p {
-            color: #157347;
-            font-weight: 500;
-            text-decoration: underline;
+            width: 260px;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
         }
         .about {
             display: flex;
             padding: 40px;
             align-items: center;
             background: #e5e5e0;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .about img {
-            width: 300px;
-            margin-right: 40px;
+            width: 250px;
+            margin: 20px;
         }
         .about div {
+            max-width: 600px;
             text-align: left;
         }
-        form {
-            margin-top: 30px;
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .stat {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 180px;
         }
         input, textarea {
             padding: 10px;
@@ -72,55 +74,139 @@
             background: #157347;
             color: white;
             padding: 12px 24px;
-            font-size: 16px;
             border: none;
             border-radius: 30px;
+            cursor: pointer;
+        }
+        footer {
+            background: #1b1b1b;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 14px;
         }
     </style>
 </head>
+
 <body>
-    <header>
-        <img src="images/logo.png" alt="IberTrust Logo">
-    </header>
 
-    <section>
-        <h2>Featured Products</h2>
-        <div class="services">
-            <div class="service">
-                <img src="images/Logo 2.png" alt="">
-                <p>Company Registration Solutions</p>
-            </div>
-            <div class="service">
-                <img src="images/Logo 2.png" alt="">
-                <p>Local Representatives in the EU, UK, and Turkey</p>
-            </div>
-            <div class="service">
-                <img src="images/Logo 2.png" alt="">
-                <p>Other EPR, TAX and Trade Consulting</p>
-            </div>
+<header>
+    <img src="images/logo.png" alt="IberTrust Logo">
+    <h1>EU Authorised Representative Services</h1>
+    <p>Helping global businesses stay compliant in Europe</p>
+</header>
+
+<section>
+    <h2>Our Services</h2>
+    <div class="services">
+
+        <div class="service">
+            <p><strong>EU Authorised Representative</strong><br>
+            Acting as EU representatives for businesses from China and worldwide under GPSR law.</p>
         </div>
-    </section>
 
-    <section class="about">
-        <img src="images/Logo 2.png" alt="">
-        <div>
-            <h2>About Our Company</h2>
-            <p>Our team brings together experts in product compliance for major e-commerce platforms like Amazon and Temu, along with seasoned professionals with over 20 years of experience in traditional international trade.</p>
-            <p>We operate with strong networks across Spain, Portugal, Ireland, the UK, Turkey, Malta, and China, providing tailored support for both cross-border e-commerce and B2B trade.</p>
-            <p>We welcome Chinese exporters and digital sellers seeking reliable, localized, and future-ready business solutions in the EU and beyond.</p>
+        <div class="service">
+            <p><strong>Warehouse Storage</strong><br>
+            Flexible warehouse solutions adapted to your operations.</p>
         </div>
-    </section>
 
-    <section>
-        <h2>Contact Us</h2>
-        <p>Interested in working together? Fill out some info and we will be in touch shortly.</p>
-        <form>
-            <input type="text" placeholder="First Name (required)" required>
-            <input type="text" placeholder="Last Name (required)" required><br>
-            <input type="email" placeholder="Email (required)" required><br>
-            <textarea placeholder="Message (required)" rows="5" required></textarea><br>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        <div class="service">
+            <p><strong>EPR Compliance</strong><br>
+            Packaging, battery and WEEE compliance across Europe.</p>
+        </div>
+
+        <div class="service">
+            <p><strong>VAT Representative</strong><br>
+            VAT representation services in the EU.</p>
+        </div>
+
+        <div class="service">
+            <p><strong>Customs & Trade</strong><br>
+            15+ years experience in import/export and clearance.</p>
+        </div>
+
+        <div class="service">
+            <p><strong>CPNP</strong><br>
+            Cosmetic product notification for EU markets.</p>
+        </div>
+
+        <div class="service">
+            <p><strong>EPREL</strong><br>
+            Electronic compliance registration services.</p>
+        </div>
+
+        <div class="service">
+            <p><strong>EUDR</strong><br>
+            EU deforestation regulation compliance support.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2>Why Choose IberTrust</h2>
+    <div class="stats">
+        <div class="stat">
+            <h3>15+ Years</h3>
+            <p>Compliance Experience</p>
+        </div>
+        <div class="stat">
+            <h3>5000+</h3>
+            <p>Memberships</p>
+        </div>
+        <div class="stat">
+            <h3>15+</h3>
+            <p>Partner Countries</p>
+        </div>
+    </div>
+
+    <div class="services" style="margin-top:30px;">
+        <div class="service">
+            <p><strong>Global Expertise</strong><br>
+            Handling complex compliance, import/export and regulatory challenges worldwide.</p>
+        </div>
+
+        <div class="service">
+            <p><strong>Multilingual Team</strong><br>
+            Fluent in Spanish, English and Mandarin.</p>
+        </div>
+
+        <div class="service">
+            <p><strong>Local Partnerships</strong><br>
+            Collaboration with environmental organizations like SGM with expert EPR support.</p>
+        </div>
+    </div>
+</section>
+
+<section class="about">
+    <img src="images/Logo 2.png" alt="">
+    <div>
+        <h2>About IberTrust Global</h2>
+        <p>Ibertrust Global S.L. is a Spain-based company specializing in EU Authorised Representative services.</p>
+        <p>We combine e-commerce compliance expertise (Amazon, Temu) with over 20 years of experience in international trade.</p>
+        <p>Our network spans across Europe and Asia, supporting businesses entering the EU market.</p>
+    </div>
+</section>
+
+<section>
+    <h2>Contact Us</h2>
+    <p>Interested in working together? Fill out the form below.</p>
+
+    <form>
+        <input type="text" placeholder="First Name" required>
+        <input type="text" placeholder="Last Name" required><br>
+        <input type="email" placeholder="Email" required><br>
+        <textarea placeholder="Message" rows="5" required></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p><strong>IBERTRUST GLOBAL, SOCIEDAD LIMITADA</strong></p>
+    <p>NIF: B21813506</p>
+    <p>C/ Pablo Iglesias, 1, Entresuelo A, 12003 Castelló de la Plana, Spain</p>
+    <p>Email: contact@ibertrust.info | Tel: +34 600256836</p>
+</footer>
+
 </body>
 </html>
